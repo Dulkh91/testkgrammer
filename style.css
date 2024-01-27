@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(58, 58, 58);
+}
+.nav{
+    background-color: rgb(26, 25, 25);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+.main{
+    background-color: rgb(58, 58, 58);
+}
+.text-view{ 
+    background-color: rgb(27, 26, 26);
+    border: solid 1px black;
+    border-color: rgb(105, 105, 105);
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.text-view:hover{
+    background-color: rgb(62, 62, 62);
+}
+
+.btn-back, .text{
+    display: inline;
+    color: white;
+}
+.text{
+    margin-left: -10px;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.btn-back{
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 8px;
+}
+
+p,h5{
+    padding: 0 0 0 10px;
+}
+p{
+    padding-left: 20px;
+    font-family: 'Noto Sans Khmer', sans-serif;
+    color: rgb(240, 240, 240);
+}
+h5,.text{
+     font-family: 'Nanum Myeongjo', serif;
+     font-family: 'Itim', cursive;
+     font-size: 18px;
+}
+.text-p{
+    font-size: 12px;
+    opacity: 0.5;
+}
+.detail-view{
+    background-color: rgb(62, 62, 62);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0%;
+    right: 0%;
+    overflow-y: scroll;
+}
+.nav-detail{
+    background-color: rgba(0, 0, 0, 0.504);
+    padding: 8px;
+}
+
+.image-box{
+    position: relative;
+    text-align: center;
+}
+img{
+    width: 60%;
+    position: relative;
+}
+
+@media screen and (max-width: 915px) {
+    img{
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    img{
+        width: 108%;
+        transform: translate(-10px);    
+    }
+    .nav-detail{
+        width: 101%;
+    }
+  }
+  .add-text-view{
+    background-color: rgb(62, 62, 62);
+  }
+.main #data-view .loading{
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.main #data-view .loading img{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
